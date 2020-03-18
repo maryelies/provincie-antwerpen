@@ -1,0 +1,240 @@
+@font-face {
+    font-family: MuseoSans300;
+    src: url(../fonts/MuseoSansCyrl_300.otf);
+}
+
+@font-face {
+    font-family: MuseoSans700;
+    src: url(../fonts/MuseoSansCyrl_700.otf);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: MuseoSans300;
+}
+
+h1, h2, h3{
+    font-family: MuseoSans700;
+}
+
+h1{
+    font-size: 28px;
+    margin-bottom: 0;
+}
+
+h2{
+    font-size: 20px;
+}
+
+h3, p{
+    font-size: 14px;
+    line-height: 18px;
+}
+
+h3{
+    margin: 28px 0 16px;
+}
+
+.topbar{
+    padding: 1.2em;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+}
+
+.logo img{
+    width: 123px;
+}
+
+.logo-flex{
+    display: flex;
+}
+
+.europe{
+    color: #E4002B;
+    font-family: MuseoSans700;
+    font-size: 15px;
+    margin: 0;
+    align-self: center;
+}
+
+.divider{
+    width: 2px;
+    height: 42px;
+    background-color: #EEEEEE;
+    transform: rotate(-10deg);
+    align-self: center;
+    margin: 0 1em;
+}
+
+.popup{
+    display: none;
+    background-color: #EEEEEE;
+}
+
+.close{
+    background-image: url(../img/close.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 23px;
+}
+
+.close{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.popup-text{
+    min-height: 375px;
+    position: relative;
+    padding: 1.5em 1.2em;
+}
+
+.popup-img{
+    min-height: 100vw;
+    background-image: url(../img/popup.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.category{
+    color: #E4002B;
+    text-transform: uppercase;
+    font-family: MuseoSans700;
+    display: flex;
+    align-items: center;
+}
+
+.category-icon{
+    background-image: url(../img/lightbulb.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 19px;
+    margin-right: 12px;
+}
+
+.popup .more{
+    position: absolute;
+    bottom: 2em;
+}
+
+.more{
+    font-family: MuseoSans700;
+    display: flex;
+}
+
+.more p{
+    margin: 0;
+}
+
+.arrow{
+    background-image: url(../img/more.png);
+    background-size: contain;
+    width: 14px;
+    height: 14px;
+    margin-left: 12px;
+    margin-top: 2px;
+}
+
+.overlay{
+    display: none;
+    position: relative;
+    padding: 1.5em 1.2em;
+}
+
+.overlay-img{
+    min-height: 100vw;
+    background-image: url(../img/popup.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 -1.2em;
+}
+
+.share{
+    display: flex;
+    margin: 2em 0;
+}
+
+.share p{
+    margin: 0 0.5em 0 0;
+    font-family: MuseoSans700;
+    font-size: 12px;
+}
+
+.social img{
+    height: 16px;
+    margin: 0 0.5em;
+}
+
+.box{
+    margin: 0 -1.2em;
+    padding: 0.2em 1.2em;
+}
+
+.box-gray{
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(245,245,240,0.5956757703081232) 100%);
+}
+
+.gray{
+    color: #7D7573;
+}
+
+.sponsors{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sponsor{
+    max-width: 45%;
+}
+
+.sponsor img{
+    width: 100%;
+}
+
+.local-img{
+    background-image: url(../img/video.png);
+    background-size: cover;
+    width: 100%;
+    height: 230px;
+}
+
+.overlay .more{
+    margin-bottom: 2em;
+}
+
+footer{
+    background-color: #363636;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    padding: 1.2em;
+}
+
+footer p{
+    margin: 0 0 0.2em;
+}
+
+footer a{
+    color: white;
+    margin: 0 0.2em;
+}
+
+.map{
+    background-image: url(../img/map.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
