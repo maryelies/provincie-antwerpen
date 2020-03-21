@@ -467,6 +467,10 @@ footer a{
         margin-right: 18px;
     }
 
+    .hamburger{
+        display: none;
+    }
+
     .search{
         display: flex;
         background-color: #EEEEEE;
