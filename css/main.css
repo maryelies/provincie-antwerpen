@@ -491,6 +491,8 @@ footer a{
         padding: 0 1em;
         height: 50px;
         background-color: #EEEEEE;
+        background-image: url(../img/search.svg);
+        background-repeat: no-repeat;
     }
 
     input:focus{
