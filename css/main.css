@@ -505,7 +505,7 @@ footer a{
         background-color: #EEEEEE;
         z-index: 50;
         padding-top: 74px;
-        transition: width 400ms ease;
+        transition: width 500ms ease;
     }
     
     .navbar-nav{
@@ -541,7 +541,7 @@ footer a{
         /* display: none; */
         /* margin-left: 1em; */
         opacity: 0;
-        transition: opacity 200ms ease;
+        transition: opacity 200ms 100ms ease;
     }
     
     .nav-link img{
@@ -558,7 +558,7 @@ footer a{
     }
 
     .navbar:hover .nav-footer a{
-        display: inline-block;
+        opacity: 1;
     }
     
     .nav-item:hover{
@@ -572,20 +572,22 @@ footer a{
         bottom: 0;
         right: 0;
         height: 74px;
-        width: 100%;
+        width: 250px;
         background-color: #363636;
         text-align: center;
         display: flex;
     }
 
     .nav-footer a{
-        display: none;
+        opacity: 0;
         color: white;
         background-color: #E4002B;
         text-decoration: none;
         padding: 1em;
         margin: auto;
         align-self: center;
+        width: 100%;
+        transition: opacity 200ms 100ms ease;
     }
 
     .map{
