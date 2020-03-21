@@ -540,9 +540,8 @@ footer a{
     .link-text{
         /* display: none; */
         /* margin-left: 1em; */
-        transform: translateX(-200px);
         opacity: 0;
-        transition: all 400ms ease;
+        transition: opacity 200ms ease;
     }
     
     .nav-link img{
@@ -555,7 +554,6 @@ footer a{
     
     .navbar:hover .link-text{
         /* display: block; */
-        transform: translateX(0);
         opacity: 1;
     }
 
