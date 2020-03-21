@@ -27,6 +27,8 @@ h1{
 
 h2{
     font-size: 20px;
+    margin-bottom: 28px;
+    width: 100%;
 }
 
 h3, p{
@@ -90,7 +92,6 @@ h3{
     position: absolute;
     top: 1em;
     right: 1em;
-    cursor: pointer;
 }
 
 .popup-text{
@@ -100,11 +101,11 @@ h3{
 }
 
 .popup-img{
-    min-height: 100vw;
-    background-image: url(../img/popup.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.popup-img img{
+    max-width: 100%;
 }
 
 .category{
@@ -133,6 +134,8 @@ h3{
 .more{
     font-family: MuseoSans700;
     display: flex;
+    color: black;
+    text-decoration: none;
 }
 
 .more p{
@@ -142,8 +145,9 @@ h3{
 .arrow{
     background-image: url(../img/more.png);
     background-size: contain;
-    width: 14px;
-    height: 14px;
+    background-repeat: no-repeat;
+    min-width: 14px;
+    min-height: 14px;
     margin-left: 12px;
     margin-top: 2px;
 }
@@ -155,19 +159,22 @@ h3{
 }
 
 .overlay{
-    /* display: none; */
+    display: none;
     background-color: white;
     position: relative;
     padding: 1.5em 1.2em;
 }
 
 .overlay-img{
-    min-height: 100vw;
-    background-image: url(../img/popup.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: 0 -1.2em;
+    margin: 28px -1.2em 0;
+}
+
+.overlay-video{
+    margin-top: 28px;
+}
+
+.overlay-img img{
+    max-width: 100%;
 }
 
 .share{
@@ -215,20 +222,145 @@ h3{
 }
 
 .local-img{
-    background-image: url(../img/video.png);
-    background-size: cover;
     width: 100%;
-    height: 230px;
+}
+
+.local-img img{
+    max-width: 100%;
 }
 
 .overlay .more{
     margin-bottom: 2em;
 }
 
+.embed-container{ 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden; 
+    max-width: 100%; 
+} 
+
+.embed-container iframe, .embed-container object, .embed-container embed{ 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+}
+
 /* .container{
     position: relative;
     height: min-content;
 } */
+
+.up{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.arrow-up{
+    width: 55px;
+    height: 55px;
+    border-radius: 100px;
+    background-color: #F2F3F4;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.arrow-up:hover{
+    background-color: white;
+}
+
+.arrow-up img{
+    align-self: center;
+    padding-bottom: 2px;
+}
+
+.overlay-list{
+    background-color: white;
+    position: relative;
+    padding: 3em 1.2em 1.5em;
+}
+
+.list-item{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 90%;
+    margin-bottom: 1.5em;
+}
+
+.list-item:hover .list-more{
+    color: white;
+    background-color: #E4002B;
+}
+
+.list-item:hover .list-more .arrow{
+    background-image: url(../img/more-white.png);
+}
+
+.list-info{
+    padding: 0.8em 1em;
+    width: 100%;
+}
+
+.list-info, .list-text{
+    align-self: center;
+}
+
+.list-text{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list-icon{
+    background-image: url(../img/groener-europa.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-width: 25px;
+    min-height: 25px;
+    margin-right: 12px;
+    align-self: center;
+}
+
+.list-icon-flex{
+    display: flex;
+}
+
+.list-title{
+    color: black;
+    text-transform: uppercase;
+    align-self: center;
+}
+
+.list-title p, .list-description p{
+    margin: 0;
+}
+
+.list-description, .list-more{
+    color: #7D7573;
+}
+
+.list-more{
+    display: flex;
+    background-color: #EEEEEE;
+    padding: 1em;
+}
+
+.list-more p{
+    margin: 0;
+    align-self: center;
+}
+
+.list-more .arrow{
+    align-self: center;
+    margin-top: 0;
+}
 
 footer{
     background-color: #363636;
@@ -256,6 +388,16 @@ footer a{
     background-position: center;
     min-height: 100vh;
     /* position: absolute; */
+}
+
+@media(min-width: 568px){
+    .overlay, .overlay-list{
+        padding: 3em 2em 1.5em;
+    }
+
+    .overlay-img{
+        margin: 28px -2em;
+    }
 }
 
 @media(min-width: 768px){
@@ -341,10 +483,66 @@ footer a{
         
     }
 
-    .overlay{
+    .overlay, .overlay-list{
         max-width: 70%;
         margin: auto;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         z-index: 20;
+    }
+
+    .list-title{
+        min-width: 250px;
+    }
+
+    .list-more{
+        min-width: 145px;
+    }
+}
+
+@media(min-width: 1024px){
+    .flex{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .flex-reverse{
+        flex-direction: row-reverse;
+    }
+
+    .flex-section{
+        width: 45%;
+    }
+
+    .sponsors{
+        justify-content: flex-start;
+    }
+
+    .sponsor{
+        max-width: 25%;
+    }
+
+    .locals-flex{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .local{
+        width: 33.33%;
+        padding: 0 1em 0 0;
+    }
+
+    .list-icon{
+        margin-right: 24px;
+    }
+}
+
+@media(min-width: 1200px){
+    .local{
+        width: 25%;
+        padding: 0 1em 0 0;
+    }
+
+    .list-text{
+        flex-wrap: nowrap;
     }
 }
