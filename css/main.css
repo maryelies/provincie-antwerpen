@@ -486,7 +486,7 @@ footer a{
         margin-top: 5px;
     } */
 
-    .search input{
+    .search select{
         border: none;
         padding: 0 1em;
         height: 50px;
@@ -499,7 +499,7 @@ footer a{
         padding-left: 35px;
     }
 
-    input:focus{
+    select:focus{
         outline: none;
     }
     
