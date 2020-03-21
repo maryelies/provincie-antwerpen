@@ -540,7 +540,9 @@ footer a{
     .link-text{
         /* display: none; */
         /* margin-left: 1em; */
+        transform: translateX(-200px);
         opacity: 0;
+        transition: transform 200ms ease;
         transition: opacity 200ms 100ms ease;
     }
     
@@ -554,6 +556,7 @@ footer a{
     
     .navbar:hover .link-text{
         /* display: block; */
+        transform: translateX(0);
         opacity: 1;
     }
 
