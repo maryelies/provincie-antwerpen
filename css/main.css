@@ -576,6 +576,7 @@ footer a{
         right: 0;
         height: 74px;
         width: 250px;
+        padding: 0 1em;
         background-color: #363636;
         text-align: center;
         display: flex;
