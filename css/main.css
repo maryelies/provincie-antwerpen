@@ -165,7 +165,7 @@ h3{
 }
 
 .absolute-overlay{
-    position: absolute;
+    position: relative;
     top: 74px;
     width: 100%
 }
@@ -406,6 +406,10 @@ footer a{
     background-position: center;
     min-height: 100vh;
     /* position: absolute; */
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
 }
 
 @media(min-width: 375px){
@@ -678,6 +682,14 @@ footer a{
         display: flex;
         max-width: 750px;
         position: relative;
+    }
+
+    .popup {
+        display: none;
+    }
+
+    .overlay {
+        display: block;
     }
 }
 
