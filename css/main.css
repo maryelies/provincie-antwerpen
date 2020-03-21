@@ -590,7 +590,7 @@ footer a{
         margin: auto;
         align-self: center;
         width: 100%;
-        transition: opacity 200ms 100ms ease;
+        transition: opacity 500ms ease;
     }
 
     .map{
