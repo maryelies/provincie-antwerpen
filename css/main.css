@@ -505,7 +505,7 @@ footer a{
         background-color: #EEEEEE;
         z-index: 50;
         padding-top: 74px;
-        transition: width 100ms ease;
+        transition: width 300ms ease;
     }
     
     .navbar-nav{
@@ -541,7 +541,7 @@ footer a{
         /* display: none; */
         /* margin-left: 1em; */
         transform: translateX(-200px);
-        transition: transform 100ms ease;
+        transition: transform 300ms ease;
     }
     
     .nav-link img{
