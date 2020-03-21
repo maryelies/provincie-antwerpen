@@ -616,6 +616,7 @@ footer a{
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 240px;
         /* position: fixed;
         width: 100%; */
     }
