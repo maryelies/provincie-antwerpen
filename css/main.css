@@ -493,6 +493,10 @@ footer a{
         background-color: #EEEEEE;
         background-image: url(../img/search.svg);
         background-repeat: no-repeat;
+        background-size: 10%;
+        background-position-y: center;
+        margin-left: 15px;
+        padding-left: 35px;
     }
 
     input:focus{
