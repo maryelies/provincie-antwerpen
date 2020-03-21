@@ -486,7 +486,7 @@ footer a{
         margin-top: 5px;
     } */
 
-    .search select{
+    .search input{
         border: none;
         padding: 0 1em;
         background-color: #EEEEEE;
@@ -498,7 +498,7 @@ footer a{
         padding-left: 35px;
     }
 
-    select:focus{
+    input:focus{
         outline: none;
     }
     
