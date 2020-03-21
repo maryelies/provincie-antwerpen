@@ -305,10 +305,10 @@ h3{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 90%;
     margin-bottom: 1.5em;
-    border-left: 3px solid white;
+    /* border-left: 3px solid white; */
 }
 
-.list-item:hover{
+.list-item a:hover{
     border-left: 3px solid #E4002B;
 }
 
@@ -517,10 +517,12 @@ footer a{
         align-items: center;
     }
     
-    .nav-item{
+    .nav-item {
         width: 100%;
-        border-left: 3px solid #EEEEEE;
         border-right: 3px solid #EEEEEE;
+    }
+    .nav-item a {
+        border-left: 3px solid #EEEEEE;
     }
     
     /* .nav-item:last-child{
@@ -565,9 +567,11 @@ footer a{
     }
     
     .nav-item:hover{
-        border-left: 3px solid #E4002B;
         border-right: 3px solid white;
         background-color: white;
+    }
+    .nav-item:hover a{
+        border-left: 3px solid #E4002B;
     }
 
     .nav-footer{
