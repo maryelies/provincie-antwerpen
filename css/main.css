@@ -538,8 +538,10 @@ footer a{
     }
     
     .link-text{
-        display: none;
+        /* display: none; */
         /* margin-left: 1em; */
+        transform: translateX(-200px);
+        transition: transform 100ms ease;
     }
     
     .nav-link img{
@@ -551,7 +553,8 @@ footer a{
     }
     
     .navbar:hover .link-text{
-        display: block;
+        /* display: block; */
+        transform: translateX(0);
     }
 
     .navbar:hover .nav-footer a{
