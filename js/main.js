@@ -40,7 +40,7 @@ closeList.addEventListener("click", function(){
 
 
 $(document).ready(function(){
-    $(".nav-link").click(function(){ 
+    $(".nav-link").hover(function(){ 
         var navLink = $(this).attr("id");
         if($("." + navLink + ":visible").length){;
           $("." + navLink).slideUp();
