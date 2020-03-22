@@ -56,59 +56,75 @@
                         <img src="img/locatie.svg" alt="locatie">
                         <span class="link-text">Locatie</span>
                     </a>
+                    <div class="locatie-dropdown">
+                        <div class="locatie-search">
+                            <form action="" class="mini-search">
+                                <input type="text" placeholder="Zoek op locatie">
+                                <button type="submit"><img src="img/search.svg" alt="search"></button>
+                            </form>
+                        </div>
+                        <div class="locatie-point">
+                            <a href="#">
+                                <p>Mijn huidige locatie</p>
+                                <img src="img/pointer.svg" alt="huidige locatie" class="pointer">
+                            </a>      
+                        </div>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <img src="img/themas.svg" alt="thema">
                         <span class="link-text">Thema's</span>
                     </a>
-                    <div class="filter-item">
-                        <div class="filter-icon slimmer-europa"></div>
-                        <p class="filter-text">Slimmer Europa</p>
-                        <label class="switch">
-                            <input type="checkbox">
-                            <span class="slider round"></span>
-                        </label>
-                    </div>
-                    <div class="filter-item">
-                        <div class="filter-icon groener-europa"></div>
-                        <p class="filter-text">Groener, koolstof- arm Europa</p>
-                        <label class="switch">
-                            <input type="checkbox">
-                            <span class="slider round"></span>
-                        </label>
-                    </div>
-                    <div class="filter-item">
-                        <div class="filter-icon verbonden-europa"></div>
-                        <p class="filter-text">Meer verbonden Europa</p>
-                        <label class="switch">
-                            <input type="checkbox">
-                            <span class="slider round"></span>
-                        </label>
-                    </div>
-                    <div class="filter-item">
-                        <div class="filter-icon socialer-europa"></div>
-                        <p class="filter-text">Socialer Europa</p>
-                        <label class="switch">
-                            <input type="checkbox">
-                            <span class="slider round"></span>
-                        </label>
-                    </div>
-                    <div class="filter-item">
-                        <div class="filter-icon dichter-europa"></div>
-                        <p class="filter-text">Europa dichter bij de burger</p>
-                        <label class="switch">
-                            <input type="checkbox">
-                            <span class="slider round"></span>
-                        </label>
-                    </div>
-                    <div class="filter-item">
-                        <div class="filter-icon samenwerken-europa"></div>
-                        <p class="filter-text">Samenwerken in Europa</p>
-                        <label class="switch">
-                            <input type="checkbox">
-                            <span class="slider round"></span>
-                        </label>
+                    <div class="thema-dropdown filter">
+                        <div class="filter-item">
+                            <div class="filter-icon slimmer-europa"></div>
+                            <p class="filter-text">Slimmer Europa</p>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="filter-item">
+                            <div class="filter-icon groener-europa"></div>
+                            <p class="filter-text">Groener, koolstof- arm Europa</p>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="filter-item">
+                            <div class="filter-icon verbonden-europa"></div>
+                            <p class="filter-text">Meer verbonden Europa</p>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="filter-item">
+                            <div class="filter-icon socialer-europa"></div>
+                            <p class="filter-text">Socialer Europa</p>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="filter-item">
+                            <div class="filter-icon dichter-europa"></div>
+                            <p class="filter-text">Europa dichter bij de burger</p>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="filter-item">
+                            <div class="filter-icon samenwerken-europa"></div>
+                            <p class="filter-text">Samenwerken in Europa</p>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -116,12 +132,32 @@
                         <img src="img/programmas.svg" alt="programma">
                         <span class="link-text">Programma's</span>
                     </a>
+                    <div class="opties programma-dropdown">
+                        <a href="#">aal</a>
+                        <a href="#">cosme</a>
+                        <a href="#">efro vlaanderen</a>
+                        <a href="#">erasmus</a>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <img src="img/locatie.svg" alt="organisatie">
                         <span class="link-text">Organisaties</span>
                     </a>
+                    <div class="organisatie-dropdown">
+                        <div class="organisatie-search">
+                            <form action="" class="mini-search">
+                                <input type="text" placeholder="Zoek op organisatie">
+                                <button type="submit"><img src="img/search.svg" alt="search"></button>
+                            </form>
+                        </div>
+                        <div class="opties organisatie-opties">
+                            <a href="#">abc eco</a>
+                            <a href="#">aberdeen harbour board</a>
+                            <a href="#">ahdb</a>
+                            <a href="#">aprel</a>
+                        </div>
+                    </div>
                 </li>
             </ul>
             <div class="nav-footer">
@@ -150,7 +186,7 @@
                     <p>
                         De Vlaams-Nederlandse fruitsector voelt de concurrentie uit het globale Zuiden
                     </p>
-                    <a href="#" class="more">
+                    <a href="#" class="more popup-more">
                         <p>Ontdek Meer</p>
                         <div class="arrow"></div>
                     </a>
@@ -418,5 +454,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
     </div>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

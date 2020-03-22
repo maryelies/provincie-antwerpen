@@ -79,6 +79,7 @@ h3{
 }
 
 .absolute-popup{
+    display: none;
     position: relative;
     /* top: 74px; */
     width: 100%;
@@ -135,13 +136,14 @@ h3{
 }
 
 .category-icon{
-    background-image: url(../img/lightbulb.png);
+    background-image: url(../img/slimmer.svg);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    width: 14px;
-    height: 19px;
-    margin-right: 12px;
+    width: 35px;
+    height: 35px;
+    margin-right: 6px;
+    align-self: center;
 }
 
 .more{
@@ -519,6 +521,7 @@ main {
         background-color: #EEEEEE;
         width: 40px;
         cursor: pointer;
+        outline: none;
     }
 
     .search button img{
@@ -527,10 +530,6 @@ main {
     }
 
     input:focus{
-        outline: none;
-    }
-
-    .search button{
         outline: none;
     }
     
@@ -559,7 +558,7 @@ main {
         width: 100%;
         border-right: 3px solid #EEEEEE;
     }
-    .nav-item a {
+    .nav-link {
         border-left: 3px solid #EEEEEE;
     }
     
@@ -607,7 +606,7 @@ main {
         border-right: 3px solid white;
         background-color: white;
     }
-    .nav-item:hover a{
+    .nav-item:hover .nav-link{
         border-left: 3px solid #E4002B;
     }
 
@@ -616,8 +615,8 @@ main {
         bottom: 0;
         right: 0;
         height: 74px;
-        width: 250px;
-        padding: 0 1em;
+        width: 275px;
+        padding: 0 2em;
         background-color: #363636;
         text-align: center;
         display: flex;
@@ -635,6 +634,68 @@ main {
         transition: opacity 500ms ease;
     }
 
+    .organisatie-search, .locatie-search{
+        height: 72px;
+        display: flex;
+    }
+
+    .mini-search{
+        display: flex;
+        width: 80%;
+        margin: auto;
+        align-self: center;
+    }
+
+    .mini-search input{
+        background-color: #F6F6F6;
+        border: none;
+        height: 40px;
+        width: 100%;
+        padding-left: 1em;
+    }
+
+    .mini-search button{
+        background-color: #EEEEEE;
+        border: none;
+    }
+
+    .mini-search button{
+        min-width: 40px;
+        height: 40px;
+        padding: 0;
+        cursor: pointer;
+        outline: none;
+    }
+
+    .mini-search button img{
+        width: 20px;
+        margin-top: 5px;
+    }
+
+    .locatie-point{
+        margin-left: 36px;
+        height: 72px;
+        display: flex;
+        width: 75%;
+    }
+
+    .locatie-point a{
+        text-decoration: none;
+        color: black;
+        align-self: center;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .locatie-point img{
+        align-self: center;
+    }
+
+    .locatie-dropdown, .thema-dropdown, .programma-dropdown, .organisatie-dropdown{
+        display: none;
+    }
+
     .filter-item{
         display: flex;
         width: 100%;
@@ -643,6 +704,7 @@ main {
 
     .filter-text{
         margin: 0;
+        margin-right: 5px;
         align-self: center;
         font-family: MuseoSans700;
         width: 50%;
@@ -677,6 +739,19 @@ main {
 
     .samenwerken-europa{
         background-image: url(../img/samenwerken-europa.svg);
+    }
+
+    .opties a{
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+        display: block;
+        margin-left: 72px;
+        margin-bottom: 1em;
+    }
+
+    .opties a:hover{
+        color: #E4002B;
     }
 
     /* The switch - the box around the slider */
