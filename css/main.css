@@ -49,7 +49,7 @@ h3{
     top: 0;
 }
 
-.navbar, .breadcrumb, .search{
+.navbar, .breadcrumb, .search, .topbar-right{
     display: none;
 }
 
@@ -171,8 +171,16 @@ h3{
     width: 100%
 }
 
-.overlay{
+.absolute-list{
+    position: relative;
+    width: 100%;
+}
+
+.absolute-overlay{
     display: none;
+}
+
+.overlay{
     background-color: white;
     position: relative;
     padding: 1.5em 1.2em;
@@ -292,8 +300,11 @@ h3{
     padding-bottom: 2px;
 }
 
-.overlay-list{
+.absolute-list{
     display: none;
+}
+
+.overlay-list{
     background-color: white;
     position: relative;
     padding: 3em 1.2em 1.5em;
@@ -405,8 +416,6 @@ footer a{
     background-image: url(../img/map.png);
     background-size: cover;
     background-position: center;
-    /* min-height: 100vh; */
-    /* position: absolute; */
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -431,6 +440,10 @@ main {
 
     .overlay-img{
         margin: 28px -2em;
+    }
+
+    .absolute-popup{
+        padding: 120px 0;
     }
 
     .popup{
@@ -480,34 +493,44 @@ main {
         display: none;
     }
 
+    .search-container{
+        margin-right: 36px;
+    }
+
     .search{
         display: flex;
-        background-color: #EEEEEE;
+        background-color: #F6F6F6;
     }
-
-    /* .search-icon{
-        width: 50px;
-        text-align: center;
-        align-self: center;
-    }
-
-    .search-icon img{
-        margin-top: 5px;
-    } */
 
     .search input{
         border: none;
-        padding: 0 1em;
-        background-color: #EEEEEE;
+        padding: 0.7em 1em;
+        background-color: #F6F6F6;
         background-image: url(../img/search.svg);
         background-repeat: no-repeat;
         background-size: 10%;
         background-position-y: center;
-        margin-left: 15px;
+        margin-left: 12px;
         padding-left: 35px;
     }
 
+    .search button{
+        border: none;
+        background-color: #EEEEEE;
+        width: 40px;
+        cursor: pointer;
+    }
+
+    .search button img{
+        margin-top: 5px;
+        width: 14px;
+    }
+
     input:focus{
+        outline: none;
+    }
+
+    .search button{
         outline: none;
     }
     
@@ -540,10 +563,6 @@ main {
         border-left: 3px solid #EEEEEE;
     }
     
-    /* .nav-item:last-child{
-        margin-top: auto;
-    } */
-    
     .nav-link{
         display: flex;
         align-items: center;
@@ -564,11 +583,14 @@ main {
     }
     
     .nav-link img{
-        margin: 0 27px;
+        /* margin: 0 27px; */
+        width: 69px;
+        height: 69px;
     }
     
     .navbar:hover{
-        width: 250px;
+        width: 275px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     
     .navbar:hover .link-text{
@@ -613,8 +635,108 @@ main {
         transition: opacity 500ms ease;
     }
 
-    .map{
-        /* min-height: calc(100vh - 74px); */
+    .filter-item{
+        display: flex;
+        width: 100%;
+        margin: 1em 0;
+    }
+
+    .filter-text{
+        margin: 0;
+        align-self: center;
+        font-family: MuseoSans700;
+        width: 50%;
+    }
+
+    .filter-icon{
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 35px;
+        min-width: 72px;
+    }
+
+    .slimmer-europa{
+        background-image: url(../img/slimmer-europa.svg);
+    }
+
+    .groener-europa{
+        background-image: url(../img/groener-europa.svg);
+    }
+
+    .verbonden-europa{
+        background-image: url(../img/verbonden-europa.svg);
+    }
+
+    .socialer-europa{
+        background-image: url(../img/socialer-europa.svg);
+    }
+
+    .dichter-europa{
+        background-image: url(../img/dichter-europa.svg);
+    }
+
+    .samenwerken-europa{
+        background-image: url(../img/samenwerken-europa.svg);
+    }
+
+    /* The switch - the box around the slider */
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 40px;
+        height: 20px;
+        align-self: center;
+    }
+    
+    /* Hide default HTML checkbox */
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    
+    /* The slider */
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #BCBBBB;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+    
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 14px;
+        width: 14px;
+        left: 4px;
+        bottom: 3px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+    
+    input:checked + .slider {
+        background-color: #E4002B;
+    }
+    
+    input:checked + .slider:before {
+        -webkit-transform: translateX(18px);
+        -ms-transform: translateX(18px);
+        transform: translateX(18px);
+    }
+    
+    /* Rounded sliders */
+    .slider.round {
+        border-radius: 34px;
+    }
+    
+    .slider.round:before {
+        border-radius: 50%;
     }
 
     footer{
@@ -622,18 +744,10 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
-        /* margin-top: 240px; */
-        /* position: fixed;
-        width: 100%; */
     }
 
-    /* .absolute-overlay{
-        top: 120px;
-        margin-bottom: 120px;
-    } */
-
-    .absolute-popup, .absolute-overlay {
-        padding-top: 120px;
+    .absolute-overlay, .absolute-list {
+        padding: 120px 0;
     }
 
     .overlay, .overlay-list{
@@ -694,7 +808,7 @@ main {
         max-width: 750px;
         position: relative;
     }
-
+/* 
     .popup {
         display: none;
     }
@@ -707,7 +821,7 @@ main {
         display: none;
     }
 
-    /* .absolute-overlay {
+    .absolute-overlay {
         display: none;
     } */
 }

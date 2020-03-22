@@ -21,11 +21,12 @@
             </div>
             <div class="breadcrumb"></div>
             <div class="topbar-right">
-                <div class="search">
-                    <!-- <div class="search-icon">
-                        <img src="img/search.svg" alt="zoek">
-                    </div> -->
-                    <input type="text" placeholder="Zoek op trefwoord...">
+                <div class="search-container">
+                    <form action="" class="search">
+                        <input type="text" placeholder="Zoek op trefwoord...">
+                        <button type="submit"><img src="img/more.png" alt="search"></button>
+                    </form>
+                    
                     <!-- <select class="chosen-select" data-placeholder="Zoek op trefwoord..." multiple="true">
                         <option value="jQuery">jQuery</option>
                         <option value="MooTools">MooTools</option>
@@ -58,13 +59,61 @@
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">
-                        <img src="img/locatie.svg" alt="thema">
+                        <img src="img/themas.svg" alt="thema">
                         <span class="link-text">Thema's</span>
                     </a>
+                    <div class="filter-item">
+                        <div class="filter-icon slimmer-europa"></div>
+                        <p class="filter-text">Slimmer Europa</p>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="filter-item">
+                        <div class="filter-icon groener-europa"></div>
+                        <p class="filter-text">Groener, koolstof- arm Europa</p>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="filter-item">
+                        <div class="filter-icon verbonden-europa"></div>
+                        <p class="filter-text">Meer verbonden Europa</p>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="filter-item">
+                        <div class="filter-icon socialer-europa"></div>
+                        <p class="filter-text">Socialer Europa</p>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="filter-item">
+                        <div class="filter-icon dichter-europa"></div>
+                        <p class="filter-text">Europa dichter bij de burger</p>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="filter-item">
+                        <div class="filter-icon samenwerken-europa"></div>
+                        <p class="filter-text">Samenwerken in Europa</p>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">
-                        <img src="img/locatie.svg" alt="programma">
+                        <img src="img/programmas.svg" alt="programma">
                         <span class="link-text">Programma's</span>
                     </a>
                 </li>
@@ -289,7 +338,7 @@
         </div>
         
         <!-- LIST OVERLAY -->
-        <div class="absolute-overlay">
+        <div class="absolute-list">
             <div class="overlay-list">
                 <a href="" class="close"></a>
                 <a href="#" class="list-item">
