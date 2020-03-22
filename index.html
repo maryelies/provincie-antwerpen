@@ -52,11 +52,11 @@
         <nav class="navbar">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="#" class="nav-link" id="locatie-dropdown">
                         <img src="img/locatie.svg" alt="locatie">
                         <span class="link-text">Locatie</span>
                     </a>
-                    <div class="locatie-dropdown">
+                    <div class="locatie-dropdown dropdown">
                         <div class="locatie-search">
                             <form action="" class="mini-search">
                                 <input type="text" placeholder="Zoek op locatie">
@@ -72,11 +72,11 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="#" class="nav-link" id="thema-dropdown">
                         <img src="img/themas.svg" alt="thema">
                         <span class="link-text">Thema's</span>
                     </a>
-                    <div class="thema-dropdown filter">
+                    <div class="thema-dropdown dropdown filter">
                         <div class="filter-item">
                             <div class="filter-icon slimmer-europa"></div>
                             <p class="filter-text">Slimmer Europa</p>
@@ -128,11 +128,11 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="#" class="nav-link" id="programma-dropdown">
                         <img src="img/programmas.svg" alt="programma">
                         <span class="link-text">Programma's</span>
                     </a>
-                    <div class="opties programma-dropdown">
+                    <div class="opties programma-dropdown dropdown">
                         <a href="#">aal</a>
                         <a href="#">cosme</a>
                         <a href="#">efro vlaanderen</a>
@@ -140,11 +140,11 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="#" class="nav-link" id="organisatie-dropdown">
                         <img src="img/locatie.svg" alt="organisatie">
                         <span class="link-text">Organisaties</span>
                     </a>
-                    <div class="organisatie-dropdown">
+                    <div class="organisatie-dropdown dropdown">
                         <div class="organisatie-search">
                             <form action="" class="mini-search">
                                 <input type="text" placeholder="Zoek op organisatie">
@@ -175,7 +175,7 @@
         <div class="map-button"></div>
         <div class="absolute-popup">
             <div class="popup">
-                <a href="" class="close"></a>
+                <a href="#" class="close close-popup"></a>
                 <div class="popup-text"> 
                     <h1>Verbeterde oogsten door drones en sensoren</h1>
                     <div class="category">
@@ -200,7 +200,7 @@
         <!-- LARGE OVERLAY -->
         <div class="absolute-overlay">
             <div class="overlay">
-                <a href="" class="close"></a>
+                <a href="#" class="close close-overlay"></a>
                 <div class="flex">
                     <div class="flex-section">
                         <h1>Verbeterde oogsten door drones en sensoren</h1>
@@ -218,7 +218,7 @@
                     </div>
                     <div class="flex-section">
                         <div class="overlay-img">
-                            <img src="img/popup.png" alt="fruit teelt">
+                            <img src="img/overlay-img.png" alt="fruit teelt">
                         </div>
                     </div>
                 </div>
@@ -376,7 +376,7 @@
         <!-- LIST OVERLAY -->
         <div class="absolute-list">
             <div class="overlay-list">
-                <a href="" class="close"></a>
+                <a href="#" class="close close-list"></a>
                 <a href="#" class="list-item">
                     <div class="list-info">
                         <div class="list-icon-flex">

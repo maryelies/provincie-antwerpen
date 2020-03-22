@@ -12,6 +12,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: MuseoSans300;
 }
@@ -86,13 +90,14 @@ h3{
 }
 
 .map-button{
-    width: 45px;
-    height: 45px;
+    width: 35px;
+    height: 35px;
     background-color: #E4002B;
     border-radius: 100px;
     top: 300px;
     right: 300px;
     position: absolute;
+    cursor: pointer;
 }
 
 .popup{
@@ -400,18 +405,15 @@ footer{
     font-size: 14px;
     text-align: center;
     padding: 1.2em;
-    /* position: absolute;
-    bottom: 0;
-    width: 100%; */
 }
 
 footer p{
-    margin: 0 0 0.2em;
+    margin: 0 0.5em;
 }
 
 footer a{
     color: white;
-    margin: 0 0.2em;
+    margin: 0 0.5em;
 }
 
 .map{
@@ -832,6 +834,10 @@ main {
         z-index: 20;
     }
 
+    .overlay-img{
+        margin: 28px 0em;
+    }
+
     .list-title{
         min-width: 250px;
     }
@@ -909,5 +915,14 @@ main {
 
     .list-text{
         flex-wrap: nowrap;
+    }
+
+    .gray{
+        width: 35%;
+    }
+
+    .box{
+        display: flex;
+        justify-content: space-between;
     }
 }
