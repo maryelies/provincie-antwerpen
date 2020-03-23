@@ -170,6 +170,7 @@ h3{
 .popup{
     background-color: #EEEEEE;
     position: relative;
+    margin-top: 74px;
 }
 
 .close{
@@ -182,7 +183,7 @@ h3{
     position: absolute;
     top: 1em;
     right: 1em;
-    z-index: 100;
+    z-index: 25;
 }
 
 .popup-text{
@@ -257,6 +258,7 @@ h3{
     background-color: white;
     position: relative;
     padding: 1.5em 1.2em;
+    margin-top: 74px;
 }
 
 .overlay-img{
