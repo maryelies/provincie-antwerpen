@@ -851,6 +851,10 @@ main {
         background-image: url(../img/samenwerken-europa.svg);
     }
 
+    .organisatie-opties{
+        margin-top: 1em;
+    }
+
     .opties a{
         text-decoration: none;
         color: black;
