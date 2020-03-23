@@ -692,15 +692,15 @@ input:focus{
     position: absolute;
     bottom: 0;
     right: 0;
-    height: 74px;
     width: 100%;
-    padding: 0 2em;
+    padding: 1em 2em;
     background-color: #363636;
     text-align: center;
     display: flex;
+    flex-direction: column;
 }
 
-.nav-footer a{
+.nav-footer .eu{
     color: white;
     background-color: #E4002B;
     text-decoration: none;
@@ -708,6 +708,14 @@ input:focus{
     margin: auto;
     align-self: center;
     width: 80%;
+}
+
+.mobile-footer p{
+    color: white;
+}
+
+.mobile-link{
+    color: white;
 }
 
 .organisatie-search, .locatie-search{
