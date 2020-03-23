@@ -506,6 +506,7 @@ main {
         background-color: #F6F6F6;
     }
 
+    .chosen-container,
     .search input{
         border: none;
         padding: 0.7em 1em;
@@ -516,6 +517,23 @@ main {
         background-position-y: center;
         margin-left: 12px;
         padding-left: 35px;
+    }
+
+    .chosen-select,
+    .chosen-select::-webkit-input-placeholder,
+    .chosen-select::placeholder {
+                font-family: MuseoSans700!important;
+    }
+    .chosen-container {
+        width: 100%!important;
+        margin-left: 0;
+    }
+
+    .chosen-choices {
+        box-shadow: none!important;
+        border: 0!important;
+        background: transparent!important;
+
     }
 
     .search button{

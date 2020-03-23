@@ -70,4 +70,8 @@ $(document).ready(function(){
           $("." + navLink).slideDown();  
         }
     });
+
+    $(".chosen-select").chosen({
+        placeholder_text_single: "Zoek op trefwoord..."
+      });
 });
