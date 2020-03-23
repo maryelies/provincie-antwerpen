@@ -39,21 +39,28 @@ closeList.addEventListener("click", function(){
 
 
 // close dropdown when hover off navbar
-var nav = document.querySelector('.navbar');
-var dropdowns = document.querySelectorAll('.dropdown');
-nav.addEventListener('mouseleave', function(e) {
-    dropdowns.forEach(element => {
-        element.style.display = 'none';
-    })
-})
+// var nav = document.querySelector('.navbar');
+// var dropdowns = document.querySelectorAll('.dropdown');
+// nav.addEventListener('mouseleave', function(e) {
+//     dropdowns.forEach(element => {
+//         element.style.display = 'none';
+//     })
+// })
 
 $(document).ready(function(){
-    // active state navitem
+    // toggle active state navitem
     $('.nav-item').click(function () {
         $('.nav-item').removeClass('active');
         $(this).addClass('active');
     });
-    
+
+    // close dropdown when hover off navbar
+    // remove active state
+    $('.navbar').mouseleave(function() {
+        $('.nav-item').removeClass('active');
+        $('.dropdown').css('display', 'none');
+    })
+
     $(".nav-link").click(function(){ 
         var navLink = $(this).attr("id");
         if($("." + navLink + ":visible").length){;
