@@ -533,7 +533,9 @@ main {
 }
 
 .search--chosen {
-    margin: auto;
+    margin: 0 36px;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .search--chosen button {
@@ -711,13 +713,12 @@ input:focus{
     text-decoration: none;
     color: black;
     align-self: center;
-    display: flex;
-    justify-content: space-between;
     width: 100%;
+    display: flex;
 }
 
 .locatie-point img{
-    align-self: center;
+    margin-left: 16px;
 }
 
 .locatie-dropdown, .thema-dropdown, .programma-dropdown, .organisatie-dropdown{
