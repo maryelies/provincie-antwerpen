@@ -430,6 +430,8 @@ main {
     min-height: calc(100vh - 74px);
 }
 
+
+
 @media(min-width: 375px){
     .popup .more{
         position: absolute;
@@ -506,8 +508,7 @@ main {
         background-color: #F6F6F6;
     }
 
-    .chosen-container,
-    .search input{
+    .search input {
         border: none;
         padding: 0.7em 1em;
         background-color: #F6F6F6;
@@ -519,24 +520,65 @@ main {
         padding-left: 35px;
     }
 
+    .chosen-container {
+        border: none;
+        padding: 0.7em 1em;
+        background-color: #F6F6F6;
+        background-image: url(../img/search.svg);
+        background-repeat: no-repeat;
+        background-position-y: center;
+        margin-left: 12px;
+        padding-left: 35px;
+        background-position-x: 12px;
+        background-size: 25px;
+    }
+
     .chosen-select,
     .chosen-select::-webkit-input-placeholder,
-    .chosen-select::placeholder {
-                font-family: MuseoSans700!important;
+    .chosen-select::placeholder ,
+    .chosen-search-input,
+    .chosen-results {
+        font-family: MuseoSans300!important;
+        font-size: 16px!important;
+        color: -internal-light-dark-color(black, white)!important;
     }
+
     .chosen-container {
         width: 100%!important;
         margin-left: 0;
+    }
+
+    .search--chosen button {
+        width: 50px;
     }
 
     .chosen-choices {
         box-shadow: none!important;
         border: 0!important;
         background: transparent!important;
-
     }
 
-    .search button{
+    .chosen-container .chosen-results li {
+        padding-top: .5rem!important;
+        padding-bottom: .5rem!important;
+    }
+
+    .chosen-container-multi .chosen-choices li.search-field {
+       padding-left: .5rem!important;
+    }
+
+    .chosen-container .chosen-drop {
+        left: 0;
+        padding-left: 2.5rem;
+        width: 100%;
+        border: none!important;
+        border-top: 0;
+        background: #F6F6F6!important;
+        box-shadow:none!important;
+        clip: none!important;
+    }
+
+    .search button {
         border: none;
         background-color: #EEEEEE;
         width: 40px;
@@ -544,7 +586,7 @@ main {
         outline: none;
     }
 
-    .search button img{
+    .search button img {
         margin-top: 5px;
         width: 14px;
     }
@@ -945,4 +987,9 @@ main {
         display: flex;
         justify-content: space-between;
     }
+}
+
+
+.search--chosen button {
+    width: 50px;
 }
