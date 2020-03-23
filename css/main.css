@@ -51,14 +51,17 @@ h3{
     background-color: white;
     z-index: 100;
     top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .hamburger-menu,
 .hamburger-menu:after,
 .hamburger-menu:before {
   width: 24px;
-  height: 4px;
-  border-radius: 2px;
+  height: 3px;
+  border-radius: 1px;
 }
 
 .hamburger-wrapper {
@@ -72,9 +75,10 @@ h3{
 	background: black;
 	transition: all 0ms 200ms;
 	display: block;
-  &.animate {
-    background: white; 
-  }
+}
+
+.hamburger-menu.animate{
+    background: white;
 }
 
 .hamburger-menu:before {
@@ -530,11 +534,6 @@ main {
 }
 
 @media(min-width: 768px){
-    .topbar{
-        display: flex;
-        justify-content: space-between;
-    }
-
     .topbar-right{
         display: flex;
     }
