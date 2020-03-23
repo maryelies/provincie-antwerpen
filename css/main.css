@@ -645,7 +645,6 @@ input:focus{
     position: fixed;
     width: 100%;
     overflow-y: scroll;
-    bottom: 0;
     margin: 74px 0;
     -ms-overflow-style: none;
 }
