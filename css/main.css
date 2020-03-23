@@ -629,7 +629,7 @@ input:focus{
     flex-direction: column;
     align-items: center;
     position: fixed;
-    width: 74px;
+    width: 100%;
     overflow-y: scroll;
     top: 0;
     bottom: 0;
@@ -679,7 +679,7 @@ input:focus{
     bottom: 0;
     right: 0;
     height: 74px;
-    width: 275px;
+    width: 100%;
     padding: 0 2em;
     background-color: #363636;
     text-align: center;
@@ -693,7 +693,7 @@ input:focus{
     padding: 1em;
     margin: auto;
     align-self: center;
-    width: 100%;
+    width: 80%;
 }
 
 .organisatie-search, .locatie-search{
