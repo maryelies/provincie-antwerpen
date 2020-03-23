@@ -526,7 +526,7 @@ main {
     background-image: none;
     padding-left: 0;
     min-width: 175px;
-    max-width: 175px;
+    /* max-width: 175px; */
 }
 
 .chosen-select,
@@ -640,7 +640,6 @@ input:focus{
 .navbar-nav{
     list-style: none;
     padding: 0;
-    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -648,6 +647,7 @@ input:focus{
     width: 100%;
     overflow-y: scroll;
     margin: 74px 0;
+    padding-bottom: 50px;
     -ms-overflow-style: none;
 }
 
