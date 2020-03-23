@@ -568,7 +568,7 @@ main {
     box-shadow:none!important;
     clip: none!important;
 }
-.chosen-container .chosen-drop .chosen-results li {
+.topbar .chosen-container .chosen-drop .chosen-results li {
     padding-left: 2.5rem;
 }
 
