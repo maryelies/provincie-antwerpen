@@ -562,6 +562,10 @@ main {
         margin-left: 0;
     }
 
+    .search--chosen {
+        margin: auto;
+    }
+
     .search--chosen button {
         width: 50px;
     }
