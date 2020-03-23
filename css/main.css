@@ -509,18 +509,6 @@ main {
         background-color: #F6F6F6;
     }
 
-    .search input {
-        border: none;
-        padding: 0.7em 1em;
-        background-color: #F6F6F6;
-        background-image: url(../img/search.svg);
-        background-repeat: no-repeat;
-        background-size: 10%;
-        background-position-y: center;
-        margin-left: 12px;
-        padding-left: 35px;
-    }
-
     .chosen-container {
         border: none;
         padding: 0.7em 1em;
@@ -745,39 +733,6 @@ main {
 
     .organisatie-search, .locatie-search{
         display: flex;
-    }
-
-    .mini-search{
-        display: flex;
-        width: 80%;
-        margin: auto;
-        align-self: center;
-    }
-
-    .mini-search input{
-        background-color: #F6F6F6;
-        border: none;
-        height: 40px;
-        width: 100%;
-        padding-left: 1em;
-    }
-
-    .mini-search button{
-        background-color: #EEEEEE;
-        border: none;
-    }
-
-    .mini-search button{
-        min-width: 40px;
-        height: 40px;
-        padding: 0;
-        cursor: pointer;
-        outline: none;
-    }
-
-    .mini-search button img{
-        width: 20px;
-        margin-top: 5px;
     }
 
     .locatie-point{
