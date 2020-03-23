@@ -601,13 +601,16 @@ main {
 
     .chosen-container .chosen-drop {
         left: 0;
-        padding-left: 2.5rem;
+        /* padding-left: 2.5rem; */
         width: 100%;
         border: none!important;
         border-top: 0;
         background: #F6F6F6!important;
         box-shadow:none!important;
         clip: none!important;
+    }
+    .chosen-container .chosen-drop .chosen-results li {
+        padding-left: 2.5rem;
     }
 
     .dropdown-search .chosen-container .chosen-drop{
