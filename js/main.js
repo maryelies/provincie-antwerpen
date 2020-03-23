@@ -28,17 +28,29 @@ $(document).ready(function(){
         placeholder_text_multiple: "Zoek op trefwoord"
       });
 
-      $(".chosen-select-location").chosen({
-        placeholder_text_single: "Zoek op locatie",
-        placeholder_text_multiple: "Zoek op locatie"
-      });
+    $(".chosen-select-location").chosen({
+    placeholder_text_single: "Zoek op locatie",
+    placeholder_text_multiple: "Zoek op locatie"
+    });
 
-      $(".chosen-select-organisation").chosen({
-        placeholder_text_single: "Zoek op organisatie",
-        placeholder_text_multiple: "Zoek op organisatie"
-      });
+    $(".chosen-select-organisation").chosen({
+    placeholder_text_single: "Zoek op organisatie",
+    placeholder_text_multiple: "Zoek op organisatie"
+    });
 
-      var list = document.querySelector(".list-button");
+    // Hamburger menu
+    (function () {
+        $('.hamburger-wrapper').on('click', function() {
+            $('.hamburger-menu').toggleClass('animate');
+            $('.mobile-menu-overlay').toggleClass('visible');
+        })
+        $('.mobile-menu-overlay > ul > li > a').on('click', function () {
+            $('.hamburger-menu').removeClass('animate');
+            $('.mobile-menu-overlay').removeClass('visible');
+        })
+    })();
+
+    var list = document.querySelector(".list-button");
 
     list.addEventListener("click", function(){
         document.querySelector(".absolute-list").style.display="block";
