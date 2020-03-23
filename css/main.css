@@ -355,13 +355,13 @@ h3{
 }
 
 .list-icon{
-    background-image: url(../img/groener-europa.svg);
+    background-image: url(../img/groener.svg);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    min-width: 25px;
-    min-height: 25px;
-    margin-right: 12px;
+    min-width: 35px;
+    min-height: 35px;
+    margin-right: 6px;
     align-self: center;
 }
 
