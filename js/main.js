@@ -71,8 +71,18 @@ $(document).ready(function(){
         }
     });
 
-    $(".chosen-select").chosen({
+    $(".chosen-select-top").chosen({
         placeholder_text_single: "Zoek op trefwoord...",
         placeholder_text_multiple: "Zoek op trefwoord..."
+      });
+
+      $(".chosen-select-location").chosen({
+        placeholder_text_single: "Zoek op locatie",
+        placeholder_text_multiple: "Zoek op locatie"
+      });
+
+      $(".chosen-select-organisation").chosen({
+        placeholder_text_single: "Zoek op organisatie",
+        placeholder_text_multiple: "Zoek op organisatie"
       });
 });

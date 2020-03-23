@@ -534,6 +534,13 @@ main {
         min-width: 233px
     }
 
+    .dropdown-search .chosen-container{
+        background-image: none;
+        padding-left: 0;
+        min-width: 175px;
+        max-width: 175px;
+    }
+
     .chosen-select,
     .chosen-select::-webkit-input-placeholder,
     .chosen-select::placeholder ,
@@ -551,6 +558,10 @@ main {
 
     .search--chosen button {
         width: 50px;
+    }
+
+    .dropdown-search .search--chosen button{
+        width: 45px;
     }
 
     .chosen-choices {
@@ -577,6 +588,10 @@ main {
         background: #F6F6F6!important;
         box-shadow:none!important;
         clip: none!important;
+    }
+
+    .dropdown-search .chosen-container .chosen-drop{
+        padding-left: 0;
     }
 
     .chosen-container ul.chosen-results li.highlighted {
@@ -716,7 +731,7 @@ main {
     }
 
     .organisatie-search, .locatie-search{
-        height: 72px;
+        /* height: 72px; */
         display: flex;
     }
 
