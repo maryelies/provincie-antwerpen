@@ -542,6 +542,10 @@ main {
 }
 
 .search--chosen {
+    margin: auto;
+}
+
+.navbar .search--chosen {
     margin: 0 36px;
     width: 100%;
     justify-content: space-between;
