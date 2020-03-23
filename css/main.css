@@ -534,6 +534,12 @@ main {
         min-width: 233px
     }
 
+    .chosen-container-multi .chosen-choices li.search-choice{
+        border: none!important;
+        background-image: none!important;
+        background-color: #EEEEEE;
+    }
+
     .dropdown-search .chosen-container{
         background-image: none;
         padding-left: 0;
