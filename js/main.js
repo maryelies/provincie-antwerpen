@@ -47,10 +47,12 @@ $(document).ready(function(){
         $('.hamburger-wrapper').on('click', function() {
             $('.hamburger-menu').toggleClass('animate');
             $('.navbar').toggleClass('visible');
+            $('.navbar-nav').toggleClass('visible');
         })
         $('.mobile-menu-overlay > ul > li > a').on('click', function () {
             $('.hamburger-menu').removeClass('animate');
             $('.navbar').removeClass('visible');
+            $('.navbar-nav').removeClass('visible');
         })
     })();
 

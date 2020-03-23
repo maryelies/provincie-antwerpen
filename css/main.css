@@ -56,12 +56,13 @@ h3{
     align-items: center;
 }
 
-.navbar {
-    display: none;
+.navbar, .navbar-nav {
+    top: -100%;
+    transition: all 800ms ease;
 }
 
 .visible {
-    display: block;
+    top: 0;
 }
 
 .hamburger-menu,
@@ -632,8 +633,6 @@ input:focus{
     background-color: #EEEEEE;
     z-index: 50;
     padding-top: 74px;
-    transition: width 500ms ease;
-    top: 0;
 }
 
 .navbar-nav{
@@ -646,7 +645,6 @@ input:focus{
     position: fixed;
     width: 100%;
     overflow-y: scroll;
-    top: 0;
     bottom: 0;
     margin: 74px 0;
     -ms-overflow-style: none;
