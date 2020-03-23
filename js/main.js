@@ -13,20 +13,20 @@ $(window).resize(function(){
             $('.nav-item').removeClass('active');
             $('.dropdown').css('display', 'none');
         })
-
-        $(".nav-link").click(function(){ 
-            var navLink = $(this).attr("id");
-            if($("." + navLink + ":visible").length){;
-            $("." + navLink).slideUp();
-            } else {
-            $(".dropdown").slideUp();
-            $("." + navLink).slideDown();  
-            }
-        });
     }	
 });
 
 $(document).ready(function(){
+    $(".nav-link").click(function(){ 
+        var navLink = $(this).attr("id");
+        if($("." + navLink + ":visible").length){;
+        $("." + navLink).slideUp();
+        } else {
+        $(".dropdown").slideUp();
+        $("." + navLink).slideDown();  
+        }
+    });
+    
     $(".chosen-select-top").chosen({
         placeholder_text_single: "Zoek op trefwoord",
         placeholder_text_multiple: "Zoek op trefwoord"

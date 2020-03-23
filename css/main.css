@@ -659,34 +659,9 @@ input:focus{
     font-size: 20px;
 }
 
-.link-text{
-    transform: translateX(-200px);
-    opacity: 0;
-    transition: transform 200ms ease;
-    transition: opacity 200ms 100ms ease;
-}
-
 .nav-link img{
     width: 69px;
     height: 69px;
-}
-
-.navbar:hover{
-    width: 275px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.navbar:hover .navbar-nav{
-    width: 275px;
-    transition: width 500ms ease;
-}
-
-.navbar:hover .link-text{
-    transform: translateX(0);
-    opacity: 1;
-}
-
-.navbar:hover .nav-footer a{
-    opacity: 1;
 }
 
 .nav-item:hover,
@@ -712,7 +687,6 @@ input:focus{
 }
 
 .nav-footer a{
-    opacity: 0;
     color: white;
     background-color: #E4002B;
     text-decoration: none;
@@ -720,7 +694,6 @@ input:focus{
     margin: auto;
     align-self: center;
     width: 100%;
-    transition: opacity 500ms ease;
 }
 
 .organisatie-search, .locatie-search{
