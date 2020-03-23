@@ -578,6 +578,11 @@ main {
         clip: none!important;
     }
 
+    .chosen-container ul.chosen-results li.highlighted {
+        background-color: #E4002B;
+        background-image: none;
+      }
+
     .search button {
         border: none;
         background-color: #EEEEEE;
