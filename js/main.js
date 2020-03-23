@@ -72,8 +72,8 @@ $(document).ready(function(){
     });
 
     $(".chosen-select-top").chosen({
-        placeholder_text_single: "Zoek op trefwoord...",
-        placeholder_text_multiple: "Zoek op trefwoord..."
+        placeholder_text_single: "Zoek op trefwoord",
+        placeholder_text_multiple: "Zoek op trefwoord"
       });
 
       $(".chosen-select-location").chosen({
