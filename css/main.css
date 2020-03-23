@@ -391,6 +391,7 @@ h3{
 }
 
 footer{
+    display: none;
     background-color: #363636;
     color: white;
     font-size: 14px;
