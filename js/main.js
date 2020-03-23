@@ -37,16 +37,6 @@ closeList.addEventListener("click", function(){
     document.querySelector(".absolute-list").style.display="none";
 });
 
-
-// close dropdown when hover off navbar
-// var nav = document.querySelector('.navbar');
-// var dropdowns = document.querySelectorAll('.dropdown');
-// nav.addEventListener('mouseleave', function(e) {
-//     dropdowns.forEach(element => {
-//         element.style.display = 'none';
-//     })
-// })
-
 $(document).ready(function(){
     // toggle active state navitem
     $('.nav-item').click(function () {
