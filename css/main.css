@@ -124,6 +124,7 @@ h3{
 }
 
 .europe{
+    display: none;
     color: #E4002B;
     font-family: MuseoSans700;
     font-size: 15px;
@@ -736,7 +737,7 @@ input:focus{
     margin-right: 5px;
     align-self: center;
     font-family: MuseoSans700;
-    width: 50%;
+    width: calc(100% - 144px);
 }
 
 .filter-icon{
@@ -848,6 +849,10 @@ input:checked + .slider:before {
     .popup .more{
         position: absolute;
         bottom: 2em;
+    }
+
+    .europe{
+        display: block;
     }
 }
 
