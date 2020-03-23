@@ -85,7 +85,6 @@ h3{
 .absolute-popup{
     display: none;
     position: relative;
-    /* top: 74px; */
     width: 100%;
 }
 
@@ -101,7 +100,6 @@ h3{
 }
 
 .popup{
-    /* display: none; */
     background-color: #EEEEEE;
     position: relative;
 }
@@ -174,7 +172,6 @@ h3{
 
 .absolute-overlay{
     position: relative;
-    /* top: 74px; */
     width: 100%
 }
 
@@ -277,11 +274,6 @@ h3{
     height: 100%;
 }
 
-/* .container{
-    position: relative;
-    height: min-content;
-} */
-
 .up{
     width: 100%;
     display: flex;
@@ -324,7 +316,6 @@ h3{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 90%;
     margin-bottom: 1.5em;
-    /* border-left: 3px solid white; */
 }
 
 .list-item a:hover{
@@ -601,7 +592,6 @@ main {
 
     .chosen-container .chosen-drop {
         left: 0;
-        /* padding-left: 2.5rem; */
         width: 100%;
         border: none!important;
         border-top: 0;
@@ -690,8 +680,6 @@ main {
     }
     
     .link-text{
-        /* display: none; */
-        /* margin-left: 1em; */
         transform: translateX(-200px);
         opacity: 0;
         transition: transform 200ms ease;
@@ -699,7 +687,6 @@ main {
     }
     
     .nav-link img{
-        /* margin: 0 27px; */
         width: 69px;
         height: 69px;
     }
@@ -714,7 +701,6 @@ main {
     }
     
     .navbar:hover .link-text{
-        /* display: block; */
         transform: translateX(0);
         opacity: 1;
     }
@@ -758,7 +744,6 @@ main {
     }
 
     .organisatie-search, .locatie-search{
-        /* height: 72px; */
         display: flex;
     }
 
@@ -881,7 +866,6 @@ main {
         color: #E4002B;
     }
 
-    /* The switch - the box around the slider */
     .switch {
         position: relative;
         display: inline-block;
@@ -890,14 +874,12 @@ main {
         align-self: center;
     }
     
-    /* Hide default HTML checkbox */
     .switch input {
         opacity: 0;
         width: 0;
         height: 0;
     }
     
-    /* The slider */
     .slider {
         position: absolute;
         cursor: pointer;
@@ -932,7 +914,6 @@ main {
         transform: translateX(18px);
     }
     
-    /* Rounded sliders */
     .slider.round {
         border-radius: 34px;
     }
@@ -1014,22 +995,6 @@ main {
         max-width: 750px;
         position: relative;
     }
-/* 
-    .popup {
-        display: none;
-    }
-
-    .overlay {
-        display: block;
-    }
-
-    .absolute-popup {
-        display: none;
-    }
-
-    .absolute-overlay {
-        display: none;
-    } */
 }
 
 @media(min-width: 1200px){
