@@ -1,5 +1,4 @@
-
-$(window).resize(function(){
+$(document).ready(function(){
     if ($(window).width() >= 768){	
         // toggle active state navitem
         $('.nav-item').click(function () {
@@ -13,10 +12,8 @@ $(window).resize(function(){
             $('.nav-item').removeClass('active');
             $('.dropdown').css('display', 'none');
         })
-    }	
-});
+    }
 
-$(document).ready(function(){
     $(".nav-link").click(function(){ 
         var navLink = $(this).attr("id");
         if($("." + navLink + ":visible").length){;
