@@ -1,3 +1,20 @@
+$(window).resize(function(){ 
+    if ($(window).width() >= 768){	
+        // toggle active state navitem
+        $('.nav-item').click(function () {
+            $('.nav-item').removeClass('active');
+            $(this).addClass('active');
+        });
+
+        // close dropdown when hover off navbar
+        // remove active state
+        $('.navbar').mouseleave(function() {
+            $('.nav-item').removeClass('active');
+            $('.dropdown').css('display', 'none');
+        })
+    }
+});
+
 $(document).ready(function(){
     if ($(window).width() >= 768){	
         // toggle active state navitem
