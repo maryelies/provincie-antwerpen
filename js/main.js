@@ -40,6 +40,12 @@ $(document).ready(function(){
         $("." + navLink).slideDown();  
         }
     });
+
+    $(".arrow-up").click(function() {
+        $('html, body').animate({
+            scrollTop: $(".smooth").offset().top
+        }, 1000);
+    });
     
     $(".chosen-select-top").chosen({
         placeholder_text_single: "Zoek op trefwoord",
