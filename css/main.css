@@ -1044,6 +1044,13 @@ input:checked + .slider:before {
         transition: opacity 500ms ease;
     }
 
+    .dropdown-search .chosen-container{
+        background-image: none;
+        padding-left: 0;
+        min-width: 175px;
+        max-width: 175px;
+    }
+
     .organisatie-search, .locatie-search{
         display: flex;
     }
