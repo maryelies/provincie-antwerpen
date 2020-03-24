@@ -713,10 +713,14 @@ input:focus{
 
 .mobile-footer p{
     color: white;
+    font-size: 14px;
+    margin: 0.5em 0;
 }
 
 .mobile-link{
     color: white;
+    font-size: 14px;
+    margin: 0 0.5em;
 }
 
 .organisatie-search, .locatie-search{
@@ -862,6 +866,10 @@ input:checked + .slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+}
+
+.overlay-list{
+    margin-top: 74px;
 }
 
 
