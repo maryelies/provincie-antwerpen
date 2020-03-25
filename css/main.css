@@ -966,55 +966,19 @@ input:checked + .slider:before {
     }
     
     .navbar{
-        /* display: block; */
         width: 74px;
-        /* height: 100vh;
-        position: fixed;
-        background-color: #EEEEEE;
-        z-index: 50;
-        padding-top: 74px; */
         transition: width 500ms ease;
         top: 0;
     }
     
     .navbar-nav{
-        /* list-style: none;
-        padding: 0; */
         margin: 0;
-        /* display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: fixed; */
         width: 74px;
         height: calc(100vh - 144px);
-        /* overflow-y: scroll; */
         top: 0;
         bottom: 0;
         margin: 74px 0;
-        /* -ms-overflow-style: none; */
     }
-
-    /* .navbar-nav::-webkit-scrollbar{
-        display: none;
-    }
-    
-    .nav-item {
-        width: 100%;
-        border-right: 3px solid #EEEEEE;
-    }
-    .nav-link {
-        border-left: 3px solid #EEEEEE;
-    }
-    
-    .nav-link{
-        display: flex;
-        align-items: center;
-        height: 74px;
-        text-decoration: none;
-        color: #242424;
-        font-family: MuseoSans700;
-        font-size: 20px;
-    } */
     
     .link-text{
         transform: translateX(-200px);
@@ -1022,11 +986,6 @@ input:checked + .slider:before {
         transition: transform 200ms ease;
         transition: opacity 200ms 100ms ease;
     }
-    
-    /* .nav-link img{
-        width: 69px;
-        height: 69px;
-    } */
     
     .navbar:hover{
         width: 275px;
@@ -1045,37 +1004,15 @@ input:checked + .slider:before {
     .navbar:hover .nav-footer a{
         opacity: 1;
     }
-    
-    /* .nav-item:hover,
-    .nav-item.active{
-        border-right: 3px solid white;
-        background-color: white;
-    }
-
-    .nav-item:hover .nav-link{
-        border-left: 3px solid #E4002B;
-    } */
 
     .nav-footer{
-        /* position: absolute;
-        bottom: 0;
-        right: 0; */
         height: 74px;
         width: 275px;
         padding: 0 2em;
-        /* background-color: #363636;
-        text-align: center;
-        display: flex; */
     }
 
     .nav-footer .eu{
         opacity: 0;
-        /* color: white;
-        background-color: #E4002B;
-        text-decoration: none;
-        padding: 1em;
-        margin: auto;
-        align-self: center; */
         width: 100%;
         transition: opacity 500ms ease;
     }
@@ -1091,154 +1028,21 @@ input:checked + .slider:before {
         max-width: 175px;
     }
 
-    /* .organisatie-search, .locatie-search{
-        display: flex;
-    }
-
-    .locatie-point{
-        margin-left: 36px;
-        height: 72px;
-        display: flex;
-        width: 75%;
-    } */
-
     .locatie-point a{
-        /* text-decoration: none;
-        color: black;
-        align-self: center;
-        display: flex; */
         justify-content: space-between;
-        /* width: 100%; */
     }
 
     .locatie-point img{
         align-self: center;
     }
 
-    /* .locatie-dropdown, .thema-dropdown, .programma-dropdown, .organisatie-dropdown{
-        display: none;
-    }
-
-    .filter-item{
-        display: flex;
-        width: 100%;
-        margin: 1em 0;
-    } */
-
     .filter-text{
-        /* margin: 0;
-        margin-right: 5px;
-        align-self: center;
-        font-family: MuseoSans700; */
         width: 50%;
     }
 
     .program-filter-item p{
         width: 50%;
     }
-
-    /* .filter-icon{
-        background-size: contain;
-        background-repeat: no-repeat;
-        height: 35px;
-        min-width: 72px;
-    }
-
-    .slimmer-europa{
-        background-image: url(../img/slimmer-europa.svg);
-    }
-
-    .groener-europa{
-        background-image: url(../img/groener-europa.svg);
-    }
-
-    .verbonden-europa{
-        background-image: url(../img/verbonden-europa.svg);
-    }
-
-    .socialer-europa{
-        background-image: url(../img/socialer-europa.svg);
-    }
-
-    .dichter-europa{
-        background-image: url(../img/dichter-europa.svg);
-    }
-
-    .samenwerken-europa{
-        background-image: url(../img/samenwerken-europa.svg);
-    }
-
-    .organisatie-opties{
-        margin-top: 1em;
-    }
-
-    .opties a{
-        text-decoration: none;
-        color: black;
-        display: block;
-        margin-left: 72px;
-        margin-bottom: 1em;
-    }
-
-    .opties a:hover{
-        color: #E4002B;
-    } */
-
-    /* .switch {
-        position: relative;
-        display: inline-block;
-        width: 40px;
-        height: 20px;
-        align-self: center;
-    }
-    
-    .switch input {
-        opacity: 0;
-        width: 0;
-        height: 0;
-    }
-    
-    .slider {
-        position: absolute;
-        cursor: pointer;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #BCBBBB;
-        -webkit-transition: .4s;
-        transition: .4s;
-    }
-    
-    .slider:before {
-        position: absolute;
-        content: "";
-        height: 14px;
-        width: 14px;
-        left: 4px;
-        bottom: 3px;
-        background-color: white;
-        -webkit-transition: .4s;
-        transition: .4s;
-    }
-    
-    input:checked + .slider {
-        background-color: #E4002B;
-    } */
-    
-    /* input:checked + .slider:before {
-        -webkit-transform: translateX(18px);
-        -ms-transform: translateX(18px);
-        transform: translateX(18px);
-    }
-    
-    .slider.round {
-        border-radius: 34px;
-    }
-    
-    .slider.round:before {
-        border-radius: 50%;
-    } */
 
     footer{
         height: 74px;
