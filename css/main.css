@@ -802,10 +802,12 @@ input:focus{
 .opties a{
     text-decoration: none;
     color: black;
-    text-transform: uppercase;
+    text-transform: capitalize;
+    font-family: MuseoSans700;
     display: block;
     margin-left: 72px;
     margin-bottom: 1em;
+    font-size: 14px;
 }
 
 .opties a:hover{
@@ -1145,7 +1147,6 @@ input:checked + .slider:before {
     .opties a{
         text-decoration: none;
         color: black;
-        text-transform: uppercase;
         display: block;
         margin-left: 72px;
         margin-bottom: 1em;
@@ -1287,6 +1288,24 @@ input:checked + .slider:before {
 }
 
 @media(min-width: 1200px){
+    .breadcrumb{
+        display: flex;
+    }
+
+    .path{
+        font-size: 14px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .current-path{
+        color: #E4002B;
+    }
+
+    .path-divider{
+        margin: 0 5px;
+    }
+    
     .local{
         width: 25%;
         padding: 0 1em 0 0;
