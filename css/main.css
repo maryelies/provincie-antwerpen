@@ -898,6 +898,13 @@ input:checked + .slider:before {
     margin-top: 74px;
 }
 
+.slick-prev:before {
+    color: black;
+  }
+  .slick-next:before {
+    color: black;
+  }
+
 
 @media(min-width: 375px){
     .popup .more{
