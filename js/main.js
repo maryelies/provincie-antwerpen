@@ -114,4 +114,15 @@ $(document).ready(function(){
     closeList.addEventListener("click", function(){
         document.querySelector(".absolute-list").style.display="none";
     });
+ 
 });
+
+$(document).ready(function(){
+    // $('.popup-img').attr("style","display: block");
+    $('.popup-img').slick({
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+  });
