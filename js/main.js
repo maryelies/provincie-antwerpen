@@ -118,8 +118,15 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-    // $('.popup-img').attr("style","display: block");
+    // $('.carousel-slide').attr("style","display: block");
     $('.popup-img').slick({
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+
+    $('.overlay-img').slick({
         infinite: true,
         speed: 300,
         slidesToShow: 1,
