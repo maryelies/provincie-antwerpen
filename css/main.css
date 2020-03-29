@@ -178,8 +178,8 @@ h3{
     width: 23px;
     height: 23px;
     position: absolute;
-    top: 1em;
-    right: 1em;
+    top: calc(1em - 4px);
+    right: calc(1em - 4px);
     z-index: 125;
 }
 
@@ -949,6 +949,16 @@ input:checked + .slider:before {
 @media(min-width: 568px){
     .overlay, .overlay-list{
         padding: 3em 2em 1.5em;
+    }
+
+    .overlay .close{
+        top: calc(1.5em - 4px);
+        right: calc(2em - 4px);
+    }
+    
+    .back{
+        top: 1.5em;
+        left: 2em;
     }
 
     .overlay-img{
