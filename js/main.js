@@ -126,16 +126,19 @@ $(document).ready(function(){
             slidesToScroll: 1
         });
 
+        // $('.map-button').on("click", function() {
+        //     $('.slick-track').css('width', '2625px'); 
+        // });
+    })
+
+    $('.popup-more').click(function(){
+
         $('.overlay-img').slick({
             infinite: true,
             speed: 300,
             slidesToShow: 1,
             slidesToScroll: 1
         });
-
-        // $('.map-button').on("click", function() {
-        //     $('.slick-track').css('width', '2625px'); 
-        // });
     })
  
 });
