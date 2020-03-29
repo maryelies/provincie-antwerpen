@@ -118,7 +118,10 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-    // $('.carousel-slide').attr("style","display: block");
+    
+    // $('.popup-img').get(0).slick.setPosition();
+    // $('.slick-slide-1').slick('setPosition'); 
+
     $('.popup-img').slick({
         infinite: true,
         speed: 300,
@@ -137,7 +140,5 @@ $(document).ready(function(){
     //     $('.slick-track').css('width', '2625px'); 
     // });
 
-    // $('.popup-img').get(0).slick.setPosition();
     
-    // $('.popup-img').slick('setPosition'); 
   });
