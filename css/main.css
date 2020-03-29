@@ -898,11 +898,21 @@ input:checked + .slider:before {
     margin-top: 74px;
 }
 
-.slick-prev:before {
+.slick-prev:before{
     color: black;
+}
+
+.slick-next:before{
+    color: black;
+}
+
+.slick-prev {
+    left: 10px;
+    z-index: 125;
   }
-  .slick-next:before {
-    color: black;
+  .slick-next {
+    right: 10px;
+    z-index: 125;
   }
 
 
