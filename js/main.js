@@ -117,6 +117,10 @@ $(document).ready(function(){
 
     $('.map-button').click(function(){
 
+        if ($('.popup-img').hasClass('slick-initialized')) {
+            $('.popup-img').slick('destroy');
+          }      
+
         $('.popup-img').slick({
             infinite: true,
             speed: 300,
@@ -127,6 +131,10 @@ $(document).ready(function(){
     })
 
     $('.popup-more').click(function(){
+
+        if ($('.overlay-img').hasClass('slick-initialized')) {
+            $('.overlay-img').slick('destroy');
+          }
 
         $('.overlay-img').slick({
             infinite: true,
