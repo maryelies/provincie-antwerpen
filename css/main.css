@@ -183,6 +183,19 @@ h3{
     z-index: 125;
 }
 
+.back{
+    background-image: url(../img/back.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    z-index: 125;
+}
+
 .popup-text{
     min-height: 375px;
     position: relative;
