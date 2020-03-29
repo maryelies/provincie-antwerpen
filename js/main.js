@@ -49,17 +49,20 @@ $(document).ready(function(){
     
     $(".chosen-select-top").chosen({
         placeholder_text_single: "Zoek op trefwoord",
-        placeholder_text_multiple: "Zoek op trefwoord"
+        placeholder_text_multiple: "Zoek op trefwoord",
+        no_results_text: "Geen resultaten voor"
       });
 
     $(".chosen-select-location").chosen({
     placeholder_text_single: "Zoek locatie",
-    placeholder_text_multiple: "Zoek locatie"
+    placeholder_text_multiple: "Zoek locatie",
+    no_results_text: "Geen resultaten voor"
     });
 
     $(".chosen-select-organisation").chosen({
     placeholder_text_single: "Zoek organisatie",
-    placeholder_text_multiple: "Zoek organisatie"
+    placeholder_text_multiple: "Zoek organisatie",
+    no_results_text: "Geen resultaten voor"
     });
 
     // Hamburger menu
