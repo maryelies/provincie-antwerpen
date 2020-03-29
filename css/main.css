@@ -1181,6 +1181,37 @@ input:checked + .slider:before {
         display: flex;
     }
 
+    .breadcrumb-item{
+        display: flex;
+        margin-right: 1em;
+    }
+
+    .breadcrumb-item p{
+        margin: 0;
+        align-self: center;
+    }
+
+    .breadcrumb-icon{
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 35px;
+        height: 35px;
+        align-self: center;
+    }
+
+    .slimmer-icon{
+        background-image: url(../img/slimmer.svg);
+    }
+
+    .locatie-icon{
+        background-image: url(../img/b-locatie.svg);
+    }
+
+    .samenwerken-icon{
+        background-image: url(../img/samenwerken.svg);
+    }
+
     .path{
         font-size: 14px;
         text-decoration: none;
