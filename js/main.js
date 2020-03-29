@@ -116,8 +116,6 @@ $(document).ready(function(){
     });
 
     $('.map-button').click(function(){
-        // $('.popup-img').get(0).slick.setPosition();
-        // $('.slick-slide-1').slick('setPosition'); 
 
         $('.popup-img').slick({
             infinite: true,
@@ -126,9 +124,6 @@ $(document).ready(function(){
             slidesToScroll: 1
         });
 
-        // $('.map-button').on("click", function() {
-        //     $('.slick-track').css('width', '2625px'); 
-        // });
     })
 
     $('.popup-more').click(function(){
