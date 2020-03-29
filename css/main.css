@@ -909,12 +909,30 @@ input:checked + .slider:before {
 .slick-prev {
     left: 10px;
     z-index: 125;
-  }
-  .slick-next {
+}
+
+.slick-next {
     right: 10px;
     z-index: 125;
-  }
+}
 
+/* .popup-img{
+    height: 375px!important;
+}
+
+.slick-list.draggable, .slick-track, .carousel-slide.slick-slide.slick-cloned img{
+    height: 375px!important;
+} */
+
+/* .ui-widget-content[aria-hidden="true"] {
+    display: block !important;
+    height: 0px;
+    overflow: hidden;
+}
+.ui-widget-content[aria-hidden="false"] {
+    display: block !important;
+    height: auto;
+} */
 
 @media(min-width: 375px){
     .popup .more{

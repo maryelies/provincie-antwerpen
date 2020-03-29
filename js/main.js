@@ -132,4 +132,12 @@ $(document).ready(function(){
         slidesToShow: 1,
         slidesToScroll: 1
     });
+
+    // $('.map-button').on("click", function() {
+    //     $('.slick-track').css('width', '2625px'); 
+    // });
+
+    // $('.popup-img').get(0).slick.setPosition();
+    
+    // $('.popup-img').slick('setPosition'); 
   });
