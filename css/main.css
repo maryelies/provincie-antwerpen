@@ -528,6 +528,19 @@ main {
     min-width: 233px
 }
 
+.search-top input {
+    border: none;
+    padding: 0.7em 1em;
+    background-color: #F6F6F6;
+    background-image: url(../img/search.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    padding-left: 50px;
+    background-position-x: 12px;
+    background-size: 25px;
+    min-width: 233px
+}
+
 .chosen-container-multi .chosen-choices li.search-choice{
     border: none!important;
     background-image: none!important;
@@ -616,6 +629,10 @@ main {
     width: 40px;
     cursor: pointer;
     outline: none;
+}
+
+.search-top button{
+    height: 40px;
 }
 
 .search button img {
@@ -1018,7 +1035,7 @@ input:checked + .slider:before {
         background-size: contain;
         background-repeat: no-repeat;
         width: 31px;
-        height: 21px;
+        height: 18px;
         align-self: center;
     }
 
