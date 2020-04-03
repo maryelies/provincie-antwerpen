@@ -1132,12 +1132,24 @@ input:checked + .slider:before {
         justify-content: space-between;
     }
 
-    .flex-reverse{
-        flex-direction: row-reverse;
+    .video-section{
+        justify-content: center;
     }
+
+    /* .flex-reverse{
+        flex-direction: row-reverse;
+    } */
 
     .flex-section{
         width: 45%;
+    }
+
+    .video-section .flex-section{
+        width: 60%;
+    }
+
+    .overlay-video{
+        margin-bottom: 28px;
     }
 
     .sponsors{
