@@ -998,18 +998,25 @@ input:checked + .slider:before {
         display: flex;
     }
 
-    .list-button{
+    .list-button, .pinpoints-button, .view-divider{
         display: flex;
-        text-decoration: none;
+        /* text-decoration: none; */
     }
 
-    .list-button p{
+    .view-divider{
+        width: 1px;
+        height: 42px;
+        background-color: #707070;
+        margin: 0 1em;
+    }
+
+    /* .list-button p{
         margin: 0;
         align-self: center;
         font-size: 18px;
         color: black;
         margin-right: 18px;
-    }
+    } */
 
     .hamburger-wrapper{
         display: none;
@@ -1227,9 +1234,9 @@ input:checked + .slider:before {
         color: #E4002B;
     }
 
-    .path-divider{
+    /* .path-divider{
         margin: 0 5px;
-    }
+    } */
     
     .local{
         width: 25%;

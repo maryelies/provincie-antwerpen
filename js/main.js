@@ -87,6 +87,14 @@ $(document).ready(function(){
         document.querySelector(".absolute-overlay").style.display="none";
     });
 
+    var pinpoints = document.querySelector(".pinpoints-button");
+
+    pinpoints.addEventListener("click", function(){
+        document.querySelector(".absolute-list").style.display="none";
+        document.querySelector(".absolute-popup").style.display="none";
+        document.querySelector(".absolute-overlay").style.display="none";
+    });
+
     var map = document.querySelector(".map-button");
 
     map.addEventListener("click", function(){
