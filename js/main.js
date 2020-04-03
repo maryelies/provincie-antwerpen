@@ -79,30 +79,6 @@ $(document).ready(function(){
         })
     })();
 
-    var list = document.querySelector(".list-button");
-
-    list.addEventListener("click", function(){
-        document.querySelector(".absolute-list").style.display="block";
-        document.querySelector(".absolute-popup").style.display="none";
-        document.querySelector(".absolute-overlay").style.display="none";
-        document.querySelector(".pinpoints-img").src = "img/pinpoints-bl.svg";
-        document.querySelector(".list-img").src = "img/list.svg";
-        document.querySelector(".pinpoints-button").classList.add("non-active-pinpoints");
-        document.querySelector(".list-button").classList.remove("non-active-list");
-    });
-
-    var pinpoints = document.querySelector(".pinpoints-button");
-
-    pinpoints.addEventListener("click", function(){
-        document.querySelector(".absolute-list").style.display="none";
-        document.querySelector(".absolute-popup").style.display="none";
-        document.querySelector(".absolute-overlay").style.display="none";
-        document.querySelector(".pinpoints-img").src = "img/pinpoints.svg";
-        document.querySelector(".list-img").src = "img/list-bl.svg";
-        document.querySelector(".pinpoints-button").classList.remove("non-active-pinpoints");
-        document.querySelector(".list-button").classList.add("non-active-list");
-    });
-
     // if (document.querySelector('.pinpoints-button').classList.contains("non-active-pinpoints")) {
     //     var nonActivePin = document.querySelector(".non-active-pinpoints");
 
@@ -127,7 +103,29 @@ $(document).ready(function(){
     //     });
     // }
 
-    
+    var list = document.querySelector(".list-button");
+
+    list.addEventListener("click", function(){
+        document.querySelector(".absolute-list").style.display="block";
+        document.querySelector(".absolute-popup").style.display="none";
+        document.querySelector(".absolute-overlay").style.display="none";
+        document.querySelector(".pinpoints-bg").style.backgroundImage = "url('img/pinpoints-bl.svg')";
+        document.querySelector(".list-bg").style.backgroundImage = "url('img/list.svg')";
+        // document.querySelector(".pinpoints-button").classList.add("non-active-pinpoints");
+        // document.querySelector(".list-button").classList.remove("non-active-list");
+    });
+
+    var pinpoints = document.querySelector(".pinpoints-button");
+
+    pinpoints.addEventListener("click", function(){
+        document.querySelector(".absolute-list").style.display="none";
+        document.querySelector(".absolute-popup").style.display="none";
+        document.querySelector(".absolute-overlay").style.display="none";
+        document.querySelector(".pinpoints-bg").style.backgroundImage = "url('img/pinpoints.svg')";
+        document.querySelector(".list-bg").style.backgroundImage = "url('img/list-bl.svg')";
+        // document.querySelector(".pinpoints-button").classList.remove("non-active-pinpoints");
+        // document.querySelector(".list-button").classList.add("non-active-list");
+    });
 
     var map = document.querySelector(".map-button");
 

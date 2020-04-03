@@ -1000,6 +1000,32 @@ input:checked + .slider:before {
         display: flex;
     }
 
+    .pinpoints-bg{
+        background-image: url(../img/pinpoints.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 23px;
+        height: 23px;
+        align-self: center;
+    }
+
+    .pinpoints-bg:hover{
+        background-image: url(../img/pinpoints.svg)!important;
+    }
+
+    .list-bg{
+        background-image: url(../img/list-bl.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 31px;
+        height: 21px;
+        align-self: center;
+    }
+
+    .list-bg:hover{
+        background-image: url(../img/list.svg)!important;
+    }
+
     .view-divider{
         width: 1px;
         height: 42px;
