@@ -85,6 +85,10 @@ $(document).ready(function(){
         document.querySelector(".absolute-list").style.display="block";
         document.querySelector(".absolute-popup").style.display="none";
         document.querySelector(".absolute-overlay").style.display="none";
+        document.querySelector(".pinpoints-img").src = "img/pinpoints-bl.svg";
+        document.querySelector(".list-img").src = "img/list.svg";
+        document.querySelector(".pinpoints-img").classList.add("non-active-pinpoints");
+        document.querySelector(".list-img").classList.remove("non-active-list");
     });
 
     var pinpoints = document.querySelector(".pinpoints-button");
@@ -93,7 +97,31 @@ $(document).ready(function(){
         document.querySelector(".absolute-list").style.display="none";
         document.querySelector(".absolute-popup").style.display="none";
         document.querySelector(".absolute-overlay").style.display="none";
+        document.querySelector(".pinpoints-img").src = "img/pinpoints.svg";
+        document.querySelector(".list-img").src = "img/list-bl.svg";
+        document.querySelector(".pinpoints-img").classList.remove("non-active-pinpoints");
+        document.querySelector(".list-img").classList.add("non-active-list");
     });
+
+    // var nonActivePin = document.querySelector(".non-active-pinpoints");
+
+    // nonActivePin.addEventListener("mouseover", function(){
+    //     document.querySelector(".pinpoints-img").src = "img/pinpoints.svg";
+    // });
+
+    // nonActivePin.addEventListener("mouseleave", function(){
+    //     document.querySelector(".pinpoints-img").src = "img/pinpoints-bl.svg";
+    // });
+
+    // var nonActiveList = document.querySelector(".non-active-list");
+
+    // nonActiveList.addEventListener("mouseover", function(){
+    //     document.querySelector(".list-img").src = "img/list.svg";
+    // });
+
+    // nonActiveList.addEventListener("mouseleave", function(){
+    //     document.querySelector(".list-img").src = "img/list-bl.svg";
+    // });
 
     var map = document.querySelector(".map-button");
 
